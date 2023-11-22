@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\arsbo\source\repos\radio\build\CMakeFiles\fea122ad38ae0aff3a1c9304d57d140f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\arsbo\source\repos\radio\cmake_scripts\add_sources.cmake">
+      <Filter>Buildsystem Input Files\cmake_scripts</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\cmake_scripts\check_file.cmake">
+      <Filter>Buildsystem Input Files\cmake_scripts</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\cmake_scripts\cmake_scripts.cmake">
+      <Filter>Buildsystem Input Files\cmake_scripts</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\cmake_scripts\download_archive.cmake">
+      <Filter>Buildsystem Input Files\cmake_scripts</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_file.cmake">
+      <Filter>Buildsystem Input Files\cmake_scripts</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_lib.cmake">
+      <Filter>Buildsystem Input Files\cmake_scripts</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\sources\main\main_sources.cmake">
+      <Filter>Buildsystem Input Files\sources\main</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\sources\radio\radio_sources.cmake">
+      <Filter>Buildsystem Input Files\sources\radio</Filter>
+    </None>
+    <None Include="C:\Users\arsbo\source\repos\radio\sources\sources.cmake">
+      <Filter>Buildsystem Input Files\sources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{614B87BF-B983-3D64-A640-757E9AC289A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\cmake_scripts">
+      <UniqueIdentifier>{DFA2BE60-4ED6-351C-822C-4B4E8D043E2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\sources">
+      <UniqueIdentifier>{8CEFF1FD-DB04-3508-9CC3-5B82603CDD85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\sources\main">
+      <UniqueIdentifier>{E0DA2F27-7961-3FF7-9E4F-8CF7E8301D13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\sources\radio">
+      <UniqueIdentifier>{7D06D54E-5C45-323F-BB6E-9DD5FE7B2609}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
