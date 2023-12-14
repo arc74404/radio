@@ -2,30 +2,38 @@
 #define MUSIC_PLAYER_HPP
 
 #include <SFML/Audio.hpp>
+#include <boost/filesystem.hpp>
 
+#include <iostream>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
 #include <time.h>
 
-
+using boost::filesystem::directory_iterator;
+using boost::filesystem::is_directory;
+using boost::filesystem::path;
 
 class MusicPlayer
 {
 public:
     MusicPlayer();
 
-    MusicPlayer(const std::string& filename, bool is_mp3);
+    MusicPlayer(const std::string& directoryname);
 
     ~MusicPlayer();
 
-    void setFile(const std::string& filename, bool is_mp3);
-
     void play();
 
+    void setDirectory(const std::string& directoryname);
+
 private:
-    void convertMp3ToWav(const std::string& filename);
+    bool is_mp3(const std::string& filename);
+
+    void addFile(const std::string& filename);
+
+    void convertMp3ToWav(char* filename);
 
     void wavWrite_int16(char* filename, int16_t* buffer, int sampleRate,
                         uint32_t totalSampleCount, int channels = 1);
@@ -39,7 +47,9 @@ private:
     void splitpath(const char* path, char* drv, char* dir, char* name,
                    char* ext);
 
-    sf::Music m_audio_file;
+    std::vector<std::string> m_filename_list;
+
+    std::vector<sf::Music> m_audio_file;
 
     float m_volume;
 

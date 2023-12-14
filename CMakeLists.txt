@@ -7,6 +7,9 @@ project(KusServer)
 find_package(SFML COMPONENTS audio system window graphics CONFIG REQUIRED)
 
 
+find_package(Boost COMPONENTS filesystem REQUIRED)
+
+
 find_path(MINIMP3_INCLUDE_DIRS "minimp3/minimp3.h")
 
 
@@ -19,6 +22,9 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/so
 target_include_directories(${PROJECT_NAME} PRIVATE ${MINIMP3_INCLUDE_DIRS})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-system sfml-audio sfml-network sfml-graphics sfml-window)
+
+
+target_link_libraries(${PROJECT_NAME} PRIVATE  Boost::boost Boost::filesystem)
 
 
 
