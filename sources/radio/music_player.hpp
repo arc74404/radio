@@ -1,19 +1,23 @@
 #ifndef MUSIC_PLAYER_HPP
 #define MUSIC_PLAYER_HPP
 
-#include <SFML/Audio.hpp>
 #include <boost/filesystem.hpp>
 
 #include <iostream>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
+
 #include <string>
-#include <time.h>
+
+#include<shared_mutex>
+
+#include "SFML/Audio.hpp"
+#include "SFML/Graphics.hpp"
+#include "crow.h"
 
 using boost::filesystem::directory_iterator;
 using boost::filesystem::is_directory;
 using boost::filesystem::path;
+
+typedef std::shared_ptr<sf::Music> MusicPtr;
 
 class MusicPlayer
 {
@@ -33,23 +37,11 @@ private:
 
     void addFile(const std::string& filename);
 
-    void convertMp3ToWav(char* filename);
-
-    void wavWrite_int16(char* filename, int16_t* buffer, int sampleRate,
-                        uint32_t totalSampleCount, int channels = 1);
-
-    char* getFileBuffer(const char* fname, int* size);
-
-    int16_t* DecodeMp3ToBuffer(char* filename, uint32_t* sampleRate,
-                               uint32_t* totalSampleCount,
-                               unsigned int* channels);
-
-    void splitpath(const char* path, char* drv, char* dir, char* name,
-                   char* ext);
+    void convertMp3ToWav(std::string& filename);
 
     std::vector<std::string> m_filename_list;
 
-    std::vector<sf::Music> m_audio_file;
+    std::vector<MusicPtr> audiofile_list;
 
     float m_volume;
 

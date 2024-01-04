@@ -6,9 +6,11 @@ main(int argc, char* argv[])
 {
     MusicPlayer player;
 
-    char* d = "C:/Users/arsbo/source/repos/radio/music/";
+    std::string d = "C:/Users/arsbo/source/repos/radio/music/";
 
     player.setDirectory(d);
+
+    player.play();
 
     std::cout << "end";
 

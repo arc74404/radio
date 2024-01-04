@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9BBC75CE-5F4E-369A-B59B-DA61500C6624}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Radio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\arsbo\source\repos\radio\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Radio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Radio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\arsbo\source\repos\radio\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Radio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Radio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\arsbo\source\repos\radio\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Radio.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Radio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\arsbo\source\repos\radio\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Radio.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Radio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/arsbo/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CROW_ICD-NOTFOUND;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CROW_ICD-NOTFOUND;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/arsbo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/arsbo/source/repos/radio/bin/Radio.exe -installedDir C:/Users/arsbo/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\sfml-network-d.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\boost_filesystem-vc140-mt-gd.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\avdevice.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\avfilter.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\avformat.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\avcodec.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\swresample.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\swscale.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\avutil.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\boost_system-vc140-mt-gd.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\debug\lib\boost_date_time-vc140-mt-gd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/arsbo/vcpkg/installed/x64-windows/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/lib/$(Configuration);C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arsbo/source/repos/radio/build/Debug/Radio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arsbo/source/repos/radio/bin/Radio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/arsbo/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CROW_ICD-NOTFOUND;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CROW_ICD-NOTFOUND;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/arsbo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/arsbo/source/repos/radio/bin/Radio.exe -installedDir C:/Users/arsbo/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-audio.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-network.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-graphics.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-window.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avdevice.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avfilter.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avformat.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avcodec.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\swresample.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\swscale.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avutil.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-system.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_system-vc140-mt.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_date_time-vc140-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/arsbo/vcpkg/installed/x64-windows/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/lib/$(Configuration);C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arsbo/source/repos/radio/build/Release/Radio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arsbo/source/repos/radio/bin/Radio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/arsbo/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CROW_ICD-NOTFOUND;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CROW_ICD-NOTFOUND;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/arsbo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/arsbo/source/repos/radio/bin/Radio.exe -installedDir C:/Users/arsbo/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-audio.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-network.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-graphics.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-window.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avdevice.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avfilter.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avformat.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avcodec.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\swresample.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\swscale.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avutil.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-system.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_system-vc140-mt.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_date_time-vc140-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/arsbo/vcpkg/installed/x64-windows/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/lib/$(Configuration);C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arsbo/source/repos/radio/build/MinSizeRel/Radio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arsbo/source/repos/radio/bin/Radio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/arsbo/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CROW_ICD-NOTFOUND;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CROW_ICD-NOTFOUND;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arsbo\source\repos\radio\sources;C:\Users\arsbo\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/arsbo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/arsbo/source/repos/radio/bin/Radio.exe -installedDir C:/Users/arsbo/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-audio.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-network.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-graphics.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-window.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avdevice.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avfilter.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avformat.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avcodec.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\swresample.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\swscale.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\avutil.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\sfml-system.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_system-vc140-mt.lib;C:\Users\arsbo\vcpkg\installed\x64-windows\lib\boost_date_time-vc140-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/arsbo/vcpkg/installed/x64-windows/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/lib/$(Configuration);C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib;C:/Users/arsbo/vcpkg/installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arsbo/source/repos/radio/build/RelWithDebInfo/Radio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arsbo/source/repos/radio/bin/Radio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\arsbo\source\repos\radio\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/arsbo/source/repos/radio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arsbo/source/repos/radio -BC:/Users/arsbo/source/repos/radio/build --check-stamp-file C:/Users/arsbo/source/repos/radio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\add_sources.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\check_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\cmake_scripts.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\download_archive.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_lib.cmake;C:\Users\arsbo\source\repos\radio\sources\main\main_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\radio\radio_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\sources.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\arsbo\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\arsbo\source\repos\radio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/arsbo/source/repos/radio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arsbo/source/repos/radio -BC:/Users/arsbo/source/repos/radio/build --check-stamp-file C:/Users/arsbo/source/repos/radio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\add_sources.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\check_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\cmake_scripts.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\download_archive.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_lib.cmake;C:\Users\arsbo\source\repos\radio\sources\main\main_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\radio\radio_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\sources.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\arsbo\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\arsbo\source\repos\radio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/arsbo/source/repos/radio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arsbo/source/repos/radio -BC:/Users/arsbo/source/repos/radio/build --check-stamp-file C:/Users/arsbo/source/repos/radio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\add_sources.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\check_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\cmake_scripts.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\download_archive.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_lib.cmake;C:\Users\arsbo\source\repos\radio\sources\main\main_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\radio\radio_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\sources.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\arsbo\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\arsbo\source\repos\radio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/arsbo/source/repos/radio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arsbo/source/repos/radio -BC:/Users/arsbo/source/repos/radio/build --check-stamp-file C:/Users/arsbo/source/repos/radio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Users\arsbo\source\repos\radio\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\add_sources.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\check_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\cmake_scripts.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\download_archive.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_file.cmake;C:\Users\arsbo\source\repos\radio\cmake_scripts\prepare_lib.cmake;C:\Users\arsbo\source\repos\radio\sources\main\main_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\radio\radio_sources.cmake;C:\Users\arsbo\source\repos\radio\sources\sources.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\arsbo\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\arsbo\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\arsbo\source\repos\radio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\arsbo\source\repos\radio\sources\main\main.cpp" />
+    <ClInclude Include="C:\Users\arsbo\source\repos\radio\sources\radio\radio.hpp" />
+    <ClCompile Include="C:\Users\arsbo\source\repos\radio\sources\radio\radio.cpp" />
+    <ClInclude Include="C:\Users\arsbo\source\repos\radio\sources\radio\music_player.hpp" />
+    <ClCompile Include="C:\Users\arsbo\source\repos\radio\sources\radio\music_player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\arsbo\source\repos\radio\build\ZERO_CHECK.vcxproj">
+      <Project>{21F476F8-7188-3427-9678-213EBC636203}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
