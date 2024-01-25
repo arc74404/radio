@@ -79,44 +79,45 @@ void
 MusicPlayer::play()
 {
 
+    sf::RenderWindow mWindow(sf::VideoMode(800, 600), "SFML window");
+
+    mWindow.setFramerateLimit(60);
     for (int i = 0; i < audiofile_list.size(); ++i)
     {
         MusicPtr file = audiofile_list[i];
         file->play();
 
         std::string com;
+
         while (file->getStatus() == sf::SoundSource::Status::Playing ||
                file->getStatus() == sf::SoundSource::Status::Paused)
         {
-            std::getline(std::cin, com);
-            if (com == "next")
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::N))
             {
                 file->stop();
                 if (i == audiofile_list.size() - 1) i = 0;
             }
-            if (com == "back")
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::B))
             {
                 file->stop();
                 if (i == 0) i = audiofile_list.size() - 1;
                 else i -= 2;
             }
-            else if (com == "pause")
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
             {
                 file->pause();
             }
-            else if (com == "playing")
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
             {
                 file->play();
             }
-            else if (com == "finish")
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
             {
                 file->stop();
                 return;
             }
-            else
-            {
-                std::cout << "the command was not recognized\n";
-            }
+            mWindow.display();
         }
     }
 }
@@ -134,7 +135,7 @@ MusicPlayer::convertMp3ToWav(std::string& filename)
     filename2[filename.size() - 1] = 'v';
 
     std::string command;
-    command = "ffmpeg -i \"" + filename + '\"' + " -acodec pcm_u8 -ar 17000 ";
+    command = "ffmpeg -i \"" + filename + '\"' + " -acodec pcm_u8 -ar 28000 ";
 
     command = command + '\"' + filename2 + '\"';
 

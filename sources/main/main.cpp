@@ -1,18 +1,29 @@
+#include "crow.h"
+// #include "crow_all.h"
 
 #include "radio/music_player.hpp"
 
 int
-main(int argc, char* argv[])
+main()
 {
-    MusicPlayer player;
+    crow::SimpleApp app;
 
-    std::string d = "C:/Users/arsbo/source/repos/radio/music/";
+    // define your endpoint at the root directory
 
-    player.setDirectory(d);
+    CROW_ROUTE(app, "/<string>")
+    ([](std::string name) { //
+        sf::Music music;
+        music.openFromFile("C:/Users/arsbo/source/repos/radio/bin/templates/"
+                           "CWT_-_Derby_Day_74735148.wav");
+        music.play();
 
-    player.play();
+        auto file = crow::mustache::load_text("t.html");
 
-    std::cout << "end";
+        return file; //
+    });
 
-    return 0;
+    
+    
+
+    app.port(18080).multithreaded().run();
 }
